@@ -1485,3 +1485,91 @@ pre .conum {
 b.conum * {
     color: inherit !important
 }
+
+table.tableblock {
+    margin-bottom: 20px;
+}
+
+table.tableblock > caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 4px 0;
+}
+
+table.tableblock {
+    border-spacing: 0;
+    border-collapse: separate;
+    -webkit-border-radius: 4px;
+}
+
+table.tableblock.frame-all {
+    border: 1px solid #ddd;
+    border-right: 0;
+}
+
+table.tableblock.frame-topbot {
+    border-style: solid;
+    border-color: #468847 #ddd;
+    border-width: 3px 0px;
+}
+
+table.tableblock.grid-all,
+table.tableblock.grid-cols {
+    border-left-width: 1px;
+}
+
+table.tableblock.frame-all.grid-rows,
+table.tableblock.frame-all.grid-all {
+    border-bottom: 0
+}
+
+table.tableblock.frame-all.grid-rows {
+    border-right: 1px solid #ddd;
+}
+
+table.tableblock th.tableblock,
+table.tableblock td.tableblock {
+    padding: 8px;
+    text-align: left;
+}
+
+table.tableblock td.tableblock {
+    vertical-align: top;
+}
+
+table.tableblock.grid-all th.tableblock,
+table.tableblock.grid-all td.tableblock {
+    border: 0 solid #ddd;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+table.tableblock.grid-cols th.tableblock,
+table.tableblock.grid-cols td.tableblock {
+    border: 0 solid #ddd;
+    border-right-width: 1px;
+}
+
+table.tableblock.grid-rows th.tableblock,
+table.tableblock.grid-rows td.tableblock {
+    border: 0 solid #ddd;
+    border-bottom-width: 1px;
+}
+
+table.tableblock > thead {
+    background-color: whiteSmoke;
+}
+
+table.tableblock > tbody > tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.tableblock tbody td.tableblock {
+    color: #333;
+}
+
+table.tableblock p.header {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
