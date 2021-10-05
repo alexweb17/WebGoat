@@ -33,18 +33,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LogSpoofingTask extends AssignmentEndpoint {
 
-    @PostMapping("/logging/logspoofingtask")
+    @PostMapping("/LogSpoofing/log-spoofing")
     @ResponseBody
     public AttackResult completed(@RequestParam String username, @RequestParam String password) {
-        //@nanne can you help here?
         if (Strings.isEmpty(username)) {
             return failed(this).output(username).build();
         }
-        username.replace("\n", "<br/>");
+        username = username.replace("\n", "<br/>");
         if (username.contains("<p>") || username.contains("<div>")) {
             return failed(this).output("Try to think of something simple ").build();
         }
-        if (username.indexOf("<br/>") < username.indexOf("admin")) {
+        if (username.indexOf("<br/>") > username.indexOf("admin")) {
             return success(this).output(username).build();
         }
         return failed(this).output(username).build();
