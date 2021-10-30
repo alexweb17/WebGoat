@@ -50,7 +50,11 @@ The fix is to make sure the resulting file in line 5 resides in the directory yo
 [source]
 ----
 File profilePicture = new File(uploadDirectory, e.getName());
-if (profilePicture.
+String canonicalprofilePicture = profilePicture.getCanonicalPath();
 
+if (!canonicalprofilePicture.startsWith(uploadDirectory + File.separator)) {
+  throw new IllegalArgumentException("Entry is placed outside the uploadDirectory")
+}
+...
 ----
 
