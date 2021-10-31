@@ -1,4 +1,3 @@
-
 == Direct Object References
 
 Direct Object References are when an application uses client-provided input to access data & objects.
@@ -15,13 +14,13 @@ Examples of Direct Object References using the GET method may look something lik
 
 === Other Methods
 
-POST, PUT, DELETE or other methods are also potentially susceptible and mainly only differ in the method and the potential payload.
+POST, PUT, DELETE or other methods are also potentially susceptible and mainly differ in the method and the potential payload.
 
 == *Insecure* Direct Object References
 
-These are considered insecure when the reference is not properly handled and allows for authorization bypasses or disclose private data that could be used to
+These are considered insecure when the reference is not handled correctly and allow for authorization bypasses or disclose private data that could be used to
 perform operations or access data that the user should not be able to perform or access.
-Let's say that as a user, you go to view your profile and the URL looks something like:
+Let us say that as a user, you go to view your profile, and the URL looks something like:
 
 `https://some.company.tld/app/user/23398`
 
