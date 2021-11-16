@@ -12,13 +12,6 @@ There are a few more topics we might want to cover here:
 - How to use logging for other purposes
 - Some resources to read
 
-==== Log Levels
-Explain log levels
-
-==== Exception Handling
- exception handling (maybe an example of logging exception towards the client with cryptography and why this is a bad idea)
-
-
 ==== Audit Logging, Security Event Monitoring, and Application Logs
 Note that logging is often used for more than just application debugging. Application logs are often used as a feed for other purposes, think of:
 
